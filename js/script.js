@@ -32,39 +32,19 @@
             }
       }
 
-      const randomNumber = Math.floor(Math.random() * 3 + 1);
+      const randomNumber = Math.floor(Math.random() * 3 + 1),
+            argComputerMove = getMoveName(randomNumber),
+            argPlayerMove = getMoveName(playerInput),
+            result = displayResult(argComputerMove, argPlayerMove);
 
       console.log('Wylosowana liczba to: ' + randomNumber);
 
-      const argComputerMove = getMoveName(randomNumber);
-
-      /*if(randomNumber == 1){
-      computerMove = 'kamień';
-      } else if(randomNumber == 2){
-      computerMove = 'papier';
-      } else if(randomNumber == 3) {
-      computerMove = 'nożyce';
-      }*/
-
       printMessage('Mój ruch to: ' + argComputerMove);
 
-      /* let playerInput = prompt('Wybierz swój ruch! 1: kamień, 2: papier, 3: nożyce.'); */
+      console.log('Gracz wpisał: ' + playerInput); 
 
-      console.log('Gracz wpisał: ' + playerInput);
-
-      const argPlayerMove = getMoveName(playerInput);
-
-      /*if(playerInput == '1'){
-      playerMove = 'kamień';
-      } else if (playerInput == '2'){
-      playerMove = 'papier';
-      } else if (playerInput == '3'){
-      playerMove = 'nożyce';
-      }*/
 
       printMessage('Twój ruch to: ' + argPlayerMove);
-
-      const result = displayResult(argComputerMove, argPlayerMove);
 
       printMessage('Wynik: ' + result);
 
