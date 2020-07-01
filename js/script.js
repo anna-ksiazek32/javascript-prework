@@ -64,7 +64,7 @@
 
       printMessage('Twój ruch to: ' + argPlayerMove);
 
-      let result = displayResult(argComputerMove, argPlayerMove);
+      const result = displayResult(argComputerMove, argPlayerMove);
 
       printMessage('Wynik: ' + result);
 
