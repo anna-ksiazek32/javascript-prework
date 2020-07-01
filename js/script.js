@@ -36,7 +36,7 @@
 
       console.log('Wylosowana liczba to: ' + randomNumber);
 
-      let argComputerMove = getMoveName(randomNumber);
+      const argComputerMove = getMoveName(randomNumber);
 
       /*if(randomNumber == 1){
       computerMove = 'kamień';
